@@ -12,7 +12,7 @@ export const SITE = {
 
 export const BOOKING_DEMO = {
   calendlyUrl: "https://calendly.com/reigninlifeministries-proton/discovery-call",
-  depositPaymentLink: "https://buy.stripe.com/6oU7sK54vdorczJaRL5gc00",
+  depositPaymentLink: "https://buy.stripe.com/test_6oU7sK54vdorczJaRL5gc00",
   packageName: "Day-of Coordination",
   depositAmount: "$200",
 };
