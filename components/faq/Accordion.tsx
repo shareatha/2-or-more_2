@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import { withBrandName } from "@/components/shared/BrandName";
 import { FAQ_ITEMS } from "@/lib/constants";
 
 export default function Accordion() {
@@ -19,7 +20,7 @@ export default function Accordion() {
               aria-expanded={isOpen}
             >
               <span className="font-display text-lg font-bold text-ink sm:text-xl">
-                {item.question}
+                {withBrandName(item.question)}
               </span>
               <ChevronDown
                 className={`h-5 w-5 shrink-0 text-gold-dark transition-transform duration-300 ${

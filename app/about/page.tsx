@@ -4,11 +4,12 @@ import Container from "@/components/shared/Container";
 import PageHeader from "@/components/shared/PageHeader";
 import CascadeReveal from "@/components/shared/CascadeReveal";
 import ClosingCTA from "@/components/shared/ClosingCTA";
+import { BrandMark } from "@/components/shared/BrandName";
 
 export const metadata: Metadata = {
-  title: "About | 2 or More",
+  title: "About | 2 OR MORE",
   description:
-    "Meet the team behind 2 or More and learn the philosophy driving our event coordination and planning services.",
+    "Meet the team behind 2 OR MORE and learn the philosophy driving our event coordination and planning services.",
 };
 
 const VALUES = [
@@ -40,7 +41,11 @@ export default function AboutPage() {
     <>
       <PageHeader
         eyebrow="Our Story"
-        title="We Started 2 or More to Make Hosting Feel Good Again."
+        title={
+          <>
+            We Started <BrandMark /> to Make Hosting Feel Good Again.
+          </>
+        }
         image="/images/photos/founder-bw.jpg"
       />
 
@@ -77,7 +82,7 @@ export default function AboutPage() {
               execute the plan they&apos;ve already built.
             </p>
             <p className="font-body text-base leading-relaxed text-charcoal sm:text-lg">
-              2 or More was made to meet hosts wherever they are in that
+              <BrandMark /> was made to meet hosts wherever they are in that
               process — an event coordination and planning company built for
               hosts who want it done right, without losing themselves in it.
             </p>
