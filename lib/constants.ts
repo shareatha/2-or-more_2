@@ -10,6 +10,13 @@ export const SITE = {
   facebook: "https://facebook.com/2ormoreevents",
 };
 
+export const BOOKING_DEMO = {
+  calendlyUrl: "https://calendly.com/reigninlifeministries-proton/discovery-call",
+  depositPaymentLink: "https://buy.stripe.com/test_9B69AS8gHfwz8jtbVP5gc01",
+  packageName: "Day-of Coordination",
+  depositAmount: "$200",
+};
+
 export const NAV_LINKS = [
   { label: "Services", href: "/services" },
   { label: "Portfolio", href: "/portfolio" },

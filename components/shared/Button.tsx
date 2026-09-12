@@ -17,15 +17,21 @@ export function Button({
   variant = "primary",
   children,
   className = "",
+  target,
+  rel,
 }: {
   href: string;
   variant?: Variant;
   children: ReactNode;
   className?: string;
+  target?: string;
+  rel?: string;
 }) {
   return (
     <Link
       href={href}
+      target={target}
+      rel={rel}
       className={`inline-flex items-center justify-center gap-2 rounded-full px-8 py-4 font-body text-xs font-bold uppercase tracking-[0.2em] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl ${VARIANT_CLASSES[variant]} ${className}`}
     >
       {children}
