@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Star } from "lucide-react";
 import Container from "@/components/shared/Container";
 import CascadeReveal from "@/components/shared/CascadeReveal";
+import { withBrandName } from "@/components/shared/BrandName";
 import { TESTIMONIAL_SPOTLIGHT } from "@/lib/constants";
 
 export default function TestimonialSpotlight() {
@@ -26,7 +27,7 @@ export default function TestimonialSpotlight() {
         </CascadeReveal>
         <CascadeReveal direction="right" delay={0.1}>
           <p className="max-w-3xl font-display text-3xl font-medium leading-snug text-ink text-balance sm:text-4xl lg:text-5xl">
-            &ldquo;{TESTIMONIAL_SPOTLIGHT.quote}&rdquo;
+            &ldquo;{withBrandName(TESTIMONIAL_SPOTLIGHT.quote)}&rdquo;
           </p>
         </CascadeReveal>
         <CascadeReveal direction="left" delay={0.2}>

@@ -5,9 +5,9 @@ import Accordion from "@/components/faq/Accordion";
 import ClosingCTA from "@/components/shared/ClosingCTA";
 
 export const metadata: Metadata = {
-  title: "FAQ | 2 or More",
+  title: "FAQ | 2 OR MORE",
   description:
-    "Answers to common questions about event coordination and planning with 2 or More.",
+    "Answers to common questions about event coordination and planning with 2 OR MORE.",
 };
 
 export default function FAQPage() {

@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import Image from "next/image";
 import CascadeReveal from "@/components/shared/CascadeReveal";
 
@@ -8,7 +9,7 @@ export default function PageHeader({
   image,
 }: {
   eyebrow: string;
-  title: string;
+  title: ReactNode;
   description?: string;
   image: string;
 }) {

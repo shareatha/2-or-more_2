@@ -17,11 +17,11 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "2 or More | Event Coordination & Planning in DE, MD & PA",
+  title: "2 OR MORE | Event Coordination & Planning in DE, MD & PA",
   description:
-    "More than a plan. A perfectly executed experience. 2 or More provides event coordination and planning for weddings, celebrations, and corporate events across Delaware, Maryland & Pennsylvania.",
+    "More than a plan. A perfectly executed experience. 2 OR MORE provides event coordination and planning for weddings, celebrations, and corporate events across Delaware, Maryland & Pennsylvania.",
   openGraph: {
-    title: "2 or More | Event Coordination & Planning",
+    title: "2 OR MORE | Event Coordination & Planning",
     description: "More than a plan. A perfectly executed experience.",
     type: "website",
   },

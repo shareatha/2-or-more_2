@@ -2,6 +2,7 @@ import Image from "next/image";
 import Container from "@/components/shared/Container";
 import CascadeReveal from "@/components/shared/CascadeReveal";
 import { Button } from "@/components/shared/Button";
+import { withBrandName } from "@/components/shared/BrandName";
 import { SIGNATURE_OFFER, POWER_HOUR } from "@/lib/constants";
 
 export default function SignatureAndPowerHour() {
@@ -27,12 +28,12 @@ export default function SignatureAndPowerHour() {
           </CascadeReveal>
           <CascadeReveal direction="left" delay={0.1}>
             <h2 className="mt-4 font-display text-4xl font-bold leading-tight text-white text-balance sm:text-5xl">
-              {SIGNATURE_OFFER.headline}
+              {withBrandName(SIGNATURE_OFFER.headline)}
             </h2>
           </CascadeReveal>
           <CascadeReveal direction="left" delay={0.2}>
             <p className="mt-6 max-w-lg font-body text-base leading-relaxed text-offwhite/80">
-              {SIGNATURE_OFFER.description}
+              {withBrandName(SIGNATURE_OFFER.description)}
             </p>
           </CascadeReveal>
           <CascadeReveal direction="left" delay={0.3}>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import CascadeReveal from "@/components/shared/CascadeReveal";
 import { Button } from "@/components/shared/Button";
+import { BrandMark } from "@/components/shared/BrandName";
 import { FOUNDER } from "@/lib/constants";
 
 export default function AboutSplit() {
@@ -35,7 +36,7 @@ export default function AboutSplit() {
           className="order-1 col-span-1 flex flex-col gap-6 px-6 sm:px-12 lg:order-2 lg:col-span-5 lg:pr-16"
         >
           <span className="font-body text-xs font-bold uppercase tracking-[0.3em] text-gold-dark">
-            About 2 or More
+            About <BrandMark />
           </span>
           <h2 className="font-display text-4xl font-bold leading-tight text-ink text-balance sm:text-5xl">
             The organized friend who has everything under control.
