@@ -4,6 +4,7 @@ import WeddingPricingGrid from "@/components/services/WeddingPricingGrid";
 import CategoryCascadeRow from "@/components/services/CategoryCascadeRow";
 import SignatureAndPowerHour from "@/components/home/SignatureAndPowerHour";
 import ALaCarteList from "@/components/services/ALaCarteList";
+import BookingDemo from "@/components/services/BookingDemo";
 import ClosingCTA from "@/components/shared/ClosingCTA";
 import { CELEBRATION_INCLUDES, CORPORATE_INCLUDES } from "@/lib/constants";
 
@@ -50,6 +51,8 @@ export default function ServicesPage() {
       <SignatureAndPowerHour />
 
       <ALaCarteList />
+
+      <BookingDemo />
 
       <ClosingCTA title="Ready to compare your options?" />
     </>
