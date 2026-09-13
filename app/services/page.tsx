@@ -5,6 +5,7 @@ import CategoryCascadeRow from "@/components/services/CategoryCascadeRow";
 import SignatureAndPowerHour from "@/components/home/SignatureAndPowerHour";
 import ALaCarteList from "@/components/services/ALaCarteList";
 import BookingDemo from "@/components/services/BookingDemo";
+import CalComBookingDemo from "@/components/services/CalComBookingDemo";
 import ClosingCTA from "@/components/shared/ClosingCTA";
 import { CELEBRATION_INCLUDES, CORPORATE_INCLUDES } from "@/lib/constants";
 
@@ -53,6 +54,8 @@ export default function ServicesPage() {
       <ALaCarteList />
 
       <BookingDemo />
+
+      <CalComBookingDemo />
 
       <ClosingCTA title="Ready to compare your options?" />
     </>
