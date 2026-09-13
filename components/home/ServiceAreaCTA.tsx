@@ -31,21 +31,18 @@ export default function ServiceAreaCTA() {
 
     const form = e.currentTarget;
     const formData = new FormData(form);
-    const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_KEY;
+    const endpoint = process.env.NEXT_PUBLIC_APPS_SCRIPT_URL;
 
-    if (!accessKey) {
+    if (!endpoint) {
       console.warn(
-        "NEXT_PUBLIC_WEB3FORMS_KEY is not set — add it to .env.local to enable live submissions."
+        "NEXT_PUBLIC_APPS_SCRIPT_URL is not set — add it to .env.local to enable live submissions."
       );
       setStatus("error");
       return;
     }
 
-    formData.append("access_key", accessKey);
-    formData.append("subject", "New Inquiry — 2 or More Website (Concept 2)");
-
     try {
-      const res = await fetch("https://api.web3forms.com/submit", {
+      const res = await fetch(endpoint, {
         method: "POST",
         body: formData,
       });
